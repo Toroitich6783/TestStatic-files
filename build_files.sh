@@ -1,16 +1,3 @@
-#!/bin/bash
-
-# Activate the virtual environment (if you are using one)
-# source /path/to/venv/bin/activate
-
-# Install dependencies
+# build_files.sh
 pip install -r requirements.txt
-
-# Collect static files
-python manage.py collectstatic --noinput
-
-# Run database migrations (if needed)
-# python manage.py migrate
-
-# Restart the web server (if applicable)
-# systemctl restart gunicorn.service
+python3.9 manage.py collectstatic
