@@ -9,10 +9,13 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="{% static 'css/sytle.css' %}">
 
-
 </head>
 <body>
     <h1 class="mm">dfghjkl;'lkjhgf m,.; lkjhgv d</h1>
+    {% comment %} <img src="statics/img/about.jpg" alt=""> {% endcomment %}
+    <img src="{% static 'img/about.jpg' %}" alt="My Image">
+
+
     {% comment %} <p class="para">{% lorem 3 b random %}</p> {% endcomment %}
 </body>
 </html>
